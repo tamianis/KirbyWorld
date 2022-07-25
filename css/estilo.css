@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: rgb(241, 214, 240);
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+.fondo{
+    background:url("../img/fondo.jfif") no-repeat fixed center;
+    background-size: cover;
+}
+/*Index*/
+.gridPadre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "titulo titulo titulo"
+        "videoindex  videoindex videoindex"
+        "h2 h2 h2"
+        "textoindex textoindex textoindex"
+        "imgIndexgrupo imgIndexgrupo imgIndexgrupo"
+        "footer footer footer";
+    gap: 1%;
+
+}
+
+/*Multimedia*/
+.gridPadre2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "header header header"
+        "titulo titulo titulo"
+        "imgMu imgMu imgMu"
+        "footer footer footer";
+    gap: 1%;
+
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    background-color: black;
+    opacity: 0.7; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 25%;
+    padding: 1%;
+    align-items: center;
+
+}
+
+nav {
+    grid-area: nav;
+
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 55%;
+    margin: auto;
+
+
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 2%;
+    padding: 2%;
+
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+ul li a:hover {
+    color: rgb(248, 34, 134);
+}
+
+.titulo {
+    grid-area: titulo;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.videoindex {
+    grid-area: videoindex;
+    align-items: center;
+    margin-left: 27%;
+
+}
+
+h2 {
+    grid-area: h2;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+
+
+.textoindex {
+    grid-area: textoindex;
+    font-style: italic;
+    font-size: large;
+    text-align: center;
+    margin: 1%;
+    font-weight: bold;
+
+}
+
+.imgIndexgrupo {
+    grid-area: imgIndexgrupo;
+    margin: 2%;
+
+}
+
+footer {
+    grid-area: footer;
+    height: 30%;
+    text-align: center;
+    position: relative;
+    
+
+}
+
+/*mobile*/
+@media screen and (max-width: 480px) {
+    .gridPadre {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "header header"
+            "titulo titulo"
+            "videoindex videoindex"
+            "h2 h2"
+            "textoindex textoindex"
+            "imgIndexgrupo imgIndexgrupo"
+            "footer footer";
+        gap: 1%;
+    }
+
+    .videoindex {
+        display: none;
+        }
+
+
+        nav ul{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .titulo {
+            text-align: center;
+            font-size: large;
+        
+        }
+
+        h2{
+            font-size:medium;
+        }
+        .textoindex {
+            font-style: italic;
+            font-size: medium;
+            text-align: center;
+            font-weight: 500;
+
+        }
+        
+        .imgIndexgrupo img {
+           width: 45%;
+        }
+        
+        footer {
+            height: 30%;
+            text-align: center;
+            position: relative;
+        
+        }
+
+}
+
+/*Multimedia*/
+
+.imgMu{
+    grid-area: imgMu;
+    margin: 1%;
+    padding-left: 8%;
+
+}
+
+
+.imgmulti{
+    padding: 1%;
+    display: inline-block;
+    
+}
+
+.imgmul{
+    padding: 1%;
+    display: inline-block;
+}
+
+@media screen and (max-width: 480px) {
+    .gridPadre2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "header header header"
+            "titulo titulo titulo"
+            "imgMu imgMu imgMu"
+            "footer footer footer";
+        gap: 1%;
+    
+    }
+
+    nav ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo {
+        text-align: center;
+        font-size: large;
+    
+    }
+        
+    .imgMu li img{
+        display: flex;
+        width: 90%;
+        height: 80%;
+    } 
+    
+    footer {
+        height: 30%;
+        text-align: center;
+        position: relative;
+    
+    }
+
+}
+
