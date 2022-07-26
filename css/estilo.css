@@ -7,7 +7,8 @@
 
 
 body {
-    background-color: rgb(241, 214, 240);
+    background-image: linear-gradient(#f8d4e6 , #e7add4 , #dc93c0 , #b874b4);
+    /* background-color: rgb(241, 214, 240); */
     font-family: 'Varela Round', sans-serif;
 
 }
@@ -16,6 +17,7 @@ body {
     background:url("../img/fondo.jfif") no-repeat fixed center;
     background-size: cover;
 }
+
 /*Index*/
 .gridPadre {
     display: grid;
@@ -101,15 +103,14 @@ ul li a:hover {
     grid-area: titulo;
     text-align: center;
     text-decoration: underline;
-
 }
 
 .videoindex {
     grid-area: videoindex;
     align-items: center;
     margin-left: 27%;
-
 }
+
 
 h2 {
     grid-area: h2;
@@ -133,8 +134,19 @@ h2 {
 .imgIndexgrupo {
     grid-area: imgIndexgrupo;
     margin: 2%;
-
+    position: relative;
+   /* animation-name: example;
+  animation-duration: 5s; */
 }
+  
+/* @keyframes example {
+    0%   {left:0px; top:0px;}
+    25%  {left:50px; top:0px;}
+    50%  {left:55px; top:15px;}
+    100% {left:0px; top:0px;}
+  } */
+
+
 
 footer {
     grid-area: footer;
@@ -208,6 +220,7 @@ footer {
     grid-area: imgMu;
     margin: 1%;
     padding-left: 8%;
+    
 
 }
 
