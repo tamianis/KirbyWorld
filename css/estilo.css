@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
     margin: 0;
@@ -8,9 +8,7 @@
 
 body {
     background-image: linear-gradient(#f8d4e6 , #e7add4 , #dc93c0 , #b874b4);
-    /* background-color: rgb(241, 214, 240); */
-    font-family: 'Varela Round', sans-serif;
-
+    
 }
 
 .fondo{
@@ -31,6 +29,8 @@ body {
 }
 
 .nav-item a {
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-small;
     text-decoration: none;
     color: white;
     font-weight: bold;
@@ -47,12 +47,16 @@ body {
 }
 
 .titulo {
+    font-family: 'Press Start 2P', cursive;
+    font-size:x-large;
     text-align: center;
     text-decoration: underline;
     padding: 1%;
 }
 
 .videoindex{
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -64,23 +68,27 @@ h2{
     flex-direction: row-reverse;
     justify-content: center;
     padding: 1%;
+    
 }
 
-.textoindex{
+.container{
     font-style: italic;
     text-align: center;
-    margin: 1%;
     padding: 1%;
     font-weight: bolder;
-       
+           
 }
 
-.order-first {
-    padding: 1%;
+.card-body{
+    background-color: #ffe4ee;
 }
 
-.col {
+.col-12 {
     padding: 1%;
+   }
+
+.img-fluid{
+    border-radius: 10%;
 }
 
 footer {
@@ -95,3 +103,28 @@ footer {
 i{
     font-weight: 400;
 }
+
+/* Historia */
+
+.introP{
+    padding:2%;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.textP{
+    padding: 1%;
+
+}
+
+h3{
+    padding: 1%;
+}
+
+/* Consolas */
+
+.imgCon{
+    border: 5px solid black;
+    border-radius: 20%;
+}
+
