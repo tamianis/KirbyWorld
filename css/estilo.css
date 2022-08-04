@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
 
 * {
     margin: 0;
@@ -46,6 +48,10 @@ body {
     flex-direction: column-reverse;
 }
 
+.navbar-toggler  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254, 123, 191, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
 .titulo {
     font-family: 'Press Start 2P', cursive;
     font-size:x-large;
@@ -54,13 +60,34 @@ body {
     padding: 1%;
 }
 
-.videoindex{
+/* .videoindex{
     width: auto;
     height: auto;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-}
+} */
+
+.videoindex {
+    position: relative;
+    margin: 1%;
+    padding-bottom: 50.25%; /* 16/9 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    }
+    
+    .videoindex iframe,
+    .videoindex object,
+    .videoindex embed {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    }
+
+
 
 h2{
     text-decoration: underline;
@@ -76,11 +103,7 @@ h2{
     text-align: center;
     padding: 1%;
     font-weight: bolder;
-           
-}
-
-.card-body{
-    background-color: #ffe4ee;
+                   
 }
 
 .col-12 {
@@ -92,7 +115,8 @@ h2{
 }
 
 footer {
-    grid-area: footer;
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-small;
     height: 30%;
     text-align: center;
     position: relative;
@@ -117,8 +141,15 @@ i{
 
 }
 
-h3{
+.card-text{
     padding: 1%;
+    font-style: italic;
+    color: rgb(129, 41, 110);
+    font-family: 'Baloo 2', cursive;
+}
+
+.card-title{
+    font-family: 'Press Start 2P', cursive;
 }
 
 /* Consolas */
