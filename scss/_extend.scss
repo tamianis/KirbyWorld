@@ -1,0 +1,13 @@
+/* EXTEND */
+
+.estilo1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: dashed;
+    text-align: left;
+}
+
+.estilo2{
+    @extend .estilo1;
+    font-size: 25px;
+    font-weight: 500;
+}

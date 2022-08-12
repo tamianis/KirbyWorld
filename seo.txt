@@ -1,0 +1,6 @@
+Cambios SEO que hice en mi proyecto:
+
+1. Cambie los titulos de todas las paginas, segun corresponda el contenido.
+2. Agregue meta descrption a todas las paginas con un pequeño texto.
+3. Modifique el h5 de la pagina historia por un h2 para seguir el orden.
+4. Agregue alt a las imagenes de la pagina index y de historia.
