@@ -3,8 +3,14 @@
 @import "mixin";
 
 
-$tip-fuente:'Press Start 2P', cursive;
+$tip-fuente: 'Press Start 2P', cursive;
+@import "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Baloo+2&display=swap";
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background-image: linear-gradient(#f8d4e6, #e7add4, #dc93c0, #b874b4);
@@ -27,7 +33,7 @@ body {
 
 .nav-item {
     a {
-        font-family: $tip-fuente;
+        font-family: 'Press Start 2P', cursive;
         font-size: x-small;
         text-decoration: none;
         color: white;
@@ -49,20 +55,20 @@ body {
 .navbar-toggler {
     .navbar-toggler-icon {
         background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254, 123, 191, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-        
+
 
     }
 }
 
 .titulo {
-    font-family: $tip-fuente;
+    font-family: 'Press Start 2P', cursive;
     font-size: x-large;
     text-align: center;
     text-decoration: underline;
     padding: 1%;
 }
 
-.videoindex {
+.divVideo {
     position: relative;
     margin: 1%;
     padding-bottom: 50.25%;
@@ -101,6 +107,7 @@ h2 {
     flex-direction: row-reverse;
     justify-content: center;
     padding: 1%;
+    
 }
 
 .container {
@@ -119,14 +126,54 @@ h2 {
 }
 
 footer {
-    font-family: "Press Start 2P", cursive;
-    font-size: small;
+    font-family: 'Press Start 2P', cursive;
+    font-size: x-small;
     height: 30%;
     text-align: center;
     position: relative;
     background-color: #252525;
-      font-weight: bolder;
-      display: flow-root;
-      color: white;
-      padding: 1%;
+    font-weight: bolder;
+    display: flow-root;
+    color: white;
+    padding: 1%;
+}
+
+i {
+    font-weight: 400;
+}
+
+.introP {
+    padding: 2%;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.card-text {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 3%;
+    font-style: italic;
+    color: rgb(129, 41, 110);
+    font-family: 'Baloo 2', cursive;
+}
+
+.card-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size:larger;
+}
+
+.col-md-4{
+    margin: 3%;
+    padding-top: 6%;
+    padding-left: 5%;
+}
+
+.imgCon {
+    border: 5px solid black;
+    border-radius: 20%;
+}
+
+.introHistoria{
+    padding: 1.5%;
+    font-style: italic;
 }
