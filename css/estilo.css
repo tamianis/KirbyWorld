@@ -1,38 +1,5 @@
-/* MAPS */
 @import "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Baloo+2&display=swap";
-.facebook {
-  color: pink; }
-
-.instagram {
-  color: purple; }
-
-.youtube {
-  color: blue; }
-
-.twitter {
-  color: orange; }
-
-.spotify {
-  color: yellow; }
-
-/* EXTEND */
-.estilo1, .estilo2 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-decoration: dashed;
-  text-align: left; }
-
-.estilo2 {
-  font-size: 25px;
-  font-weight: 500; }
-
-/* MIXIN */
-.textoEstilo {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: small;
-  text-decoration: overline;
-  text-align: center; }
-
 * {
   margin: 0;
   padding: 0; }
@@ -120,6 +87,9 @@ h2 {
 .img-fluid {
   border-radius: 10%; }
 
+.row {
+  justify-content: center; }
+
 footer {
   font-family: 'Press Start 2P', cursive;
   font-size: x-small;
@@ -133,11 +103,6 @@ footer {
   padding: 1%; }
 
 i {
-  font-weight: 400; }
-
-.introP {
-  padding: 2%;
-  font-style: italic;
   font-weight: 400; }
 
 .card-text {
