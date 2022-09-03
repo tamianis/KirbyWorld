@@ -1,3 +1,10 @@
+/*IMPORT estilos*/
+
+@import "index";
+@import "historia";
+@import "personajes";
+@import "consolas";
+@import "multimedia";
 
 $tip-fuente: 'Press Start 2P', cursive;
 @import "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap";
@@ -9,11 +16,11 @@ $tip-fuente: 'Press Start 2P', cursive;
 }
 
 body {
-    background-image: linear-gradient(#f8d4e6, #e7add4, #dc93c0, #b874b4);
+    background-image: linear-gradient(#eebcd5, #e7add4, #bd79a6, #b95899);
 }
 
 .fondo {
-    background: url("../img/fondo.jfif") no-repeat fixed center;
+    background: url("../img/fondo1.jpg") no-repeat fixed center;
     background-size: cover;
 }
 
@@ -64,67 +71,6 @@ body {
     padding: 1%;
 }
 
-.divVideo {
-    position: relative;
-    margin: 1%;
-    padding-bottom: 50.25%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 15%;
-        width: 70%;
-        height: 70%;
-    }
-
-    object {
-        position: absolute;
-        top: 0;
-        left: 15%;
-        width: 70%;
-        height: 70%;
-    }
-
-    embed {
-        position: absolute;
-        top: 0;
-        left: 15%;
-        width: 70%;
-        height: 70%;
-    }
-}
-
-h2 {
-    text-decoration: underline;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    padding: 1%;
-    
-}
-
-.container {
-    font-style: italic;
-    text-align: center;
-    padding: 1%;
-    font-weight: bolder;
-
-}
-
-.col-12 {
-    padding: 1%;
-}
-
-.img-fluid {
-    border-radius: 10%;
-}
-
-.row{
-    justify-content:center;
-}
 
 footer {
     font-family: 'Press Start 2P', cursive;
@@ -137,83 +83,10 @@ footer {
     display: flow-root;
     color: white;
     padding: 1%;
+    bottom: 0;
 }
 
 
 i {
     font-weight: 400;
 }
-
-
-.card-text {
-    padding-top: 1%;
-    padding-bottom: 1%;
-    padding-right: 3%;
-    font-style: italic;
-    color: rgb(129, 41, 110);
-    font-family: 'Baloo 2', cursive;
-
-}
-
-.card-title {
-    font-family: 'Press Start 2P', cursive;
-    font-size:larger;
-}
-
-.col-md-5{
-    margin: 3%;
-    padding-top: 6%;
-    padding-left: 5%;
-}
-
-.imgCon {
-    border: 5px solid black;
-    border-radius: 20%;
-}
-
-.introHistoria{
-    padding: 1.5%;
-    font-style: italic;
-}
-.photo-gallery {
-    color:#313437;
-
-  }
-  
-  .photo-gallery p {
-    color:#7d8285;
-  }
-  
-  .photo-gallery h2 {
-    font-weight:bold;
-    margin-bottom:40px;
-    padding-top:40px;
-    color:inherit;
-  }
-  
-  @media (max-width:767px) {
-    .photo-gallery h2 {
-      margin-bottom:25px;
-      padding-top:25px;
-      font-size:24px;
-    }
-  }
-  
-  .photo-gallery .intro {
-    font-size:16px;
-    max-width:500px;
-    margin:0 auto 40px;
-  }
-  
-  .photo-gallery .intro p {
-    margin-bottom:0;
-  }
-  
-  .photo-gallery .photos {
-    padding-bottom:20px;
-  }
-  
-  .photo-gallery .item {
-    padding-bottom:1%;
-  }
-  
