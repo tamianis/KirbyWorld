@@ -1,6 +1,7 @@
 /*IMPORT estilos*/
-@import "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Baloo+2&display=swap";
+@import "https://fonts.googleapis.com/css2?family=VT323&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Silkscreen&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap";
 .divVideo {
   position: relative;
   margin: 1%;
@@ -48,34 +49,87 @@ h2 {
   justify-content: center;
   padding: 1%; }
 
-.card-text {
-  padding-top: 1%;
-  padding-bottom: 1%;
-  padding-right: 3%;
-  font-style: italic;
-  color: #81296e;
-  font-family: 'Baloo 2', cursive; }
+#work {
+  text-align: center;
+  padding: 10px 0px; }
 
-.card-title {
-  font-family: 'Press Start 2P', cursive;
-  font-size: larger; }
+#work .col-md-4 {
+  margin-top: 35px; }
 
-.col-md-5 {
-  margin: 3%;
-  padding-top: 6%;
-  padding-left: 5%; }
+#work .inner_box {
+  width: 100%;
+  padding: 30px 10px;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  background: #9d94c2;
+  border-radius: 25px; }
 
-.imgCon {
-  border: 5px solid black;
-  border-radius: 20%; }
+#work .inner_box:hover {
+  background-color: #cad9ee;
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.2); }
 
-.introHistoria {
-  padding: 1.5%;
-  font-style: italic; }
+.readmore {
+  padding: 10px 35px;
+  background-color: #d9bdd3;
+  border-radius: 25px;
+  font-size: 18px;
+  color: #3d3c3e;
+  text-decoration: none; }
 
-.h2Consola {
-  font-size: medium;
-  font-style: italic; }
+.imgHistoria {
+  width: 25%; }
+
+.imgHistoria2 {
+  width: 30%; }
+
+.textHis {
+  color: #2e2f30; }
+
+.cards {
+  display: grid;
+  padding-left: 10%;
+  padding-right: 10%;
+  grid-gap: 40px;
+  margin-bottom: 5%; }
+  @media only screen and (min-width: 720px) {
+    .cards {
+      grid-template-columns: auto auto auto; } }
+  @media only screen and (max-width: 720px) and (min-width: 500px) {
+    .cards {
+      grid-template-columns: auto auto; } }
+  @media only screen and (max-width: 500px) {
+    .cards {
+      grid-template-columns: auto; } }
+
+.card {
+  background-color: #1c1b29;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18); }
+
+.imgCard {
+  border-radius: 10px 10px 10px 10px; }
+  @media only screen and (max-width: 500px) {
+    .imgCard {
+      width: 50%; } }
+  @media only screen and (min-width: 500px) {
+    .imgCard {
+      width: 100%;
+      display: block; } }
+
+.details {
+  padding: 20px 10px; }
+
+.details > h2 {
+  color: #d364ca;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center; }
+
+.details > p {
+  color: #696565;
+  font-size: 25px;
+  line-height: 20px;
+  font-weight: 400; }
 
 .gallery-block {
   padding-bottom: 60px;
@@ -90,21 +144,18 @@ h2 {
   font-size: 1.4rem;
   text-transform: uppercase; }
 
-.gallery-block.cards-gallery h6 {
+.gallery-block.cards-gallery h2 {
   font-size: 17px;
   font-weight: bold; }
 
 .gallery-block.cards-gallery .card {
   transition: 0.4s ease; }
 
-.gallery-block.cards-gallery .card img {
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); }
-
 .gallery-block.cards-gallery .card-body {
   text-align: center; }
 
 .gallery-block.cards-gallery .card-body p {
-  font-size: 15px; }
+  font-size: 18px; }
 
 .gallery-block.cards-gallery a {
   color: #212529; }
@@ -115,6 +166,12 @@ h2 {
 .gallery-block.cards-gallery .card {
   margin-bottom: 30px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); }
+
+.textConsola {
+  color: #857dfa; }
+
+.h2Consola {
+  color: #e184de; }
 
 @media (min-width: 576px) {
   .gallery-block .transform-on-hover:hover {
@@ -158,9 +215,6 @@ h2 {
   padding: 0; }
 
 body {
-  background-image: linear-gradient(#eebcd5, #e7add4, #bd79a6, #b95899); }
-
-.fondo {
   background: url("../img/fondo1.jpg") no-repeat fixed center;
   background-size: cover; }
 
@@ -173,8 +227,8 @@ body {
   list-style-type: none; }
 
 .nav-item a {
-  font-family: 'Press Start 2P', cursive;
-  font-size: x-small;
+  font-family: "Silkscreen", cursive;
+  font-size: small;
   text-decoration: none;
   color: white;
   font-weight: bold; }
@@ -189,24 +243,33 @@ body {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(254, 123, 191, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 .titulo {
-  font-family: 'Press Start 2P', cursive;
-  font-size: x-large;
+  font-family: "Silkscreen", cursive;
+  font-size: 300%;
   text-align: center;
-  text-decoration: underline;
-  padding: 1%; }
+  padding: 1%;
+  color: #000; }
 
 footer {
-  font-family: 'Press Start 2P', cursive;
-  font-size: x-small;
-  height: 30%;
+  font-family: "Silkscreen", cursive;
+  padding: 1%;
   text-align: center;
-  position: relative;
+  font-size: 100%;
   background-color: #252525;
   font-weight: bolder;
-  display: flow-root;
   color: white;
-  padding: 1%;
-  bottom: 0; }
+  width: 100%; }
 
-i {
-  font-weight: 400; }
+h2 {
+  font-family: "Indie Flower", cursive; }
+
+p {
+  font-family: "VT323", monospace; }
+
+.card-text {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 3%;
+  font-size: 20px;
+  color: rgba(182, 65, 153, 0.863);
+  font-family: "VT323", monospace;
+  font-weight: 300; }

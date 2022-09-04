@@ -6,9 +6,14 @@
 @import "consolas";
 @import "multimedia";
 
-$tip-fuente: 'Press Start 2P', cursive;
-@import "https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap";
-@import "https://fonts.googleapis.com/css2?family=Baloo+2&display=swap";
+$tip-fuente2: 'VT323', monospace;
+$tip-fuente3: 'Silkscreen', cursive;
+$tip-fuente4: 'Indie Flower', cursive;
+
+
+@import "https://fonts.googleapis.com/css2?family=VT323&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Silkscreen&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap";
 
 * {
     margin: 0;
@@ -16,10 +21,6 @@ $tip-fuente: 'Press Start 2P', cursive;
 }
 
 body {
-    background-image: linear-gradient(#eebcd5, #e7add4, #bd79a6, #b95899);
-}
-
-.fondo {
     background: url("../img/fondo1.jpg") no-repeat fixed center;
     background-size: cover;
 }
@@ -36,8 +37,8 @@ body {
 
 .nav-item {
     a {
-        font-family: 'Press Start 2P', cursive;
-        font-size: x-small;
+        font-family: $tip-fuente3;
+        font-size: small;
         text-decoration: none;
         color: white;
         font-weight: bold;
@@ -64,29 +65,42 @@ body {
 }
 
 .titulo {
-    font-family: 'Press Start 2P', cursive;
-    font-size: x-large;
+    font-family:$tip-fuente3;
+    font-size: 300%;
     text-align: center;
-    text-decoration: underline;
     padding: 1%;
+    color: #000;
+
 }
 
 
 footer {
-    font-family: 'Press Start 2P', cursive;
-    font-size: x-small;
-    height: 30%;
+    font-family: $tip-fuente3;
+    padding: 1%;
     text-align: center;
-    position: relative;
+    font-size: 100%;
     background-color: #252525;
     font-weight: bolder;
-    display: flow-root;
     color: white;
-    padding: 1%;
-    bottom: 0;
+    width: 100%;
 }
 
-
-i {
-    font-weight: 400;
+h2{
+    font-family: $tip-fuente4;
 }
+
+p{
+    font-family: $tip-fuente2;
+}
+
+ 
+.card-text {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 3%;
+    font-size: 20px;
+    color: rgba(182, 65, 153, 0.863);
+    font-family: $tip-fuente2;
+    font-weight: 300;
+  
+  }

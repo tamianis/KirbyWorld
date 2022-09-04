@@ -1,0 +1,54 @@
+.divVideo {
+  position: relative;
+  margin: 1%;
+  padding-bottom: 50.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+  }
+
+  object {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+  }
+
+  embed {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+  }
+}
+
+
+.container {
+  font-style: italic;
+  text-align: center;
+  padding: 1%;
+  font-weight: bolder;
+
+}
+
+.col-12 {
+  padding: 1%;
+}
+
+.img-fluid {
+  border-radius: 10%;
+}
+
+.row {
+  justify-content: center;
+}
+ 
