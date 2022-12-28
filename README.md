@@ -1,4 +1,3 @@
-# proyecto--coder
-Proyecto desarrollo web Coderhouse
+Proyecto Desarrollo Web - Coderhouse
 
 https://kirby-world.netlify.app/index.html
