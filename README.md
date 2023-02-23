@@ -1,4 +1,3 @@
-# proyecto--coder
-Proyecto final de  Desarrollo web Coderhouse
+Proyecto final del curso Desarrollo web Coderhouse
 
-https://kirby-world.netlify.app/
+Sitio web: https://kirby-world.netlify.app/
